@@ -1,26 +1,35 @@
 PODS:
   - IQKeyboardManager (6.2.0)
-  - Realm (3.11.0):
-    - Realm/Headers (= 3.11.0)
-  - Realm/Headers (3.11.0)
-  - RealmSwift (3.11.0):
-    - Realm (= 3.11.0)
+  - Realm (3.11.1):
+    - Realm/Headers (= 3.11.1)
+  - Realm/Headers (3.11.1)
+  - RealmSwift (3.11.1):
+    - Realm (= 3.11.1)
+  - Swinject (2.5.0)
+  - SwinjectStoryboard (2.1.0):
+    - Swinject (~> 2.5)
 
 DEPENDENCIES:
   - IQKeyboardManager
   - RealmSwift
+  - Swinject
+  - SwinjectStoryboard
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IQKeyboardManager
     - Realm
     - RealmSwift
+    - Swinject
+    - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
-  Realm: 92f09a102692b96a9a10e9617f214f15c5ab85fc
-  RealmSwift: 5f0481cd658bb751c509314b964a35eaa264d2cf
+  Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
+  RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+  SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: d05b03b693e7b8dbe34e5ea7462f1a288787a6f3
+PODFILE CHECKSUM: 9cd99d5cc112cd795327cfe707d9f4d183b618fd
 
 COCOAPODS: 1.5.3

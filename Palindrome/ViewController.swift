@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var checkImageView: UIImageView!
     
-    @IBOutlet weak var viewModel: ViewModel!
+    var viewModel: ViewModelProtocol!
     
     @IBOutlet weak var tableView: UITableView!
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18572AE5217CA282008A196B /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AE4217CA282008A196B /* Assembly.swift */; };
 		187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB237217BF05B008EAEDC /* AppDelegate.swift */; };
 		187BB23A217BF05B008EAEDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB239217BF05B008EAEDC /* ViewController.swift */; };
 		187BB23D217BF05B008EAEDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BB23B217BF05B008EAEDC /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18572AE4217CA282008A196B /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		187BB234217BF05B008EAEDC /* Palindrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palindrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BB237217BF05B008EAEDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187BB239217BF05B008EAEDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				187BB23E217BF05E008EAEDC /* Assets.xcassets */,
 				187BB240217BF05E008EAEDC /* LaunchScreen.storyboard */,
 				187BB243217BF05E008EAEDC /* Info.plist */,
+				18572AE4217CA282008A196B /* Assembly.swift */,
 			);
 			name = SupportFiles;
 			sourceTree = "<group>";
@@ -203,6 +206,8 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -211,6 +216,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -250,6 +257,7 @@
 				187BB256217C3512008EAEDC /* Word.swift in Sources */,
 				187BB23A217BF05B008EAEDC /* ViewController.swift in Sources */,
 				187BB24D217C0C71008EAEDC /* ViewModel.swift in Sources */,
+				18572AE5217CA282008A196B /* Assembly.swift in Sources */,
 				187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */,
 				187BB252217C1651008EAEDC /* Validation.swift in Sources */,
 				187BB254217C2C74008EAEDC /* WordSource.swift in Sources */,

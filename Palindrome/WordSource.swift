@@ -9,13 +9,19 @@
 import Foundation
 import RealmSwift
 
-class WordSource {
+protocol WordSourceProtocol {
+    func saveWord(_ string: String)
+    func deleteWord(row: Int)
+    func numberOfWords() -> Int
+    func word(row: Int) -> String
+}
+
+class WordSource: WordSourceProtocol {
     
     lazy var realm = try! Realm()
     lazy var words = realm.objects(Word.self).sorted(byKeyPath: "string")
     
-    static var shared = WordSource()
-    private init() {}
+    init() {}
     
     func saveWord(_ string: String) {
         let word = Word()

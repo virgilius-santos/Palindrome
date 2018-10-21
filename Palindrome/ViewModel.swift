@@ -8,9 +8,18 @@
 
 import Foundation
 
-class ViewModel: NSObject {
+protocol ViewModelProtocol {
+    var isPalindrome: Box<Bool> {get}
+    func saveWord(completion: @escaping()->())
+    func deleteWord(row: Int, completion: @escaping()->())
+    func numberOfWords() -> Int
+    func word(row: Int) -> String
+    func newWord(_ string: String?)
+}
+
+class ViewModel: NSObject , ViewModelProtocol {
     
-    lazy var dataSource = WordSource.shared
+    var dataSource: WordSourceProtocol!
     
     lazy var isPalindrome: Box<Bool> = Box(false)
     

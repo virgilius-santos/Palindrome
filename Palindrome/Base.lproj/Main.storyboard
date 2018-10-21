@@ -92,11 +92,9 @@
                         <outlet property="saveButton" destination="2Ky-aO-Pn7" id="JSD-6c-wU6"/>
                         <outlet property="tableView" destination="aw4-S4-2NH" id="vYX-GB-fXR"/>
                         <outlet property="textField" destination="hak-HE-m5t" id="nuD-Hr-zCW"/>
-                        <outlet property="viewModel" destination="efe-HA-WwL" id="I4N-JY-0t3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="efe-HA-WwL" customClass="ViewModel" customModule="Palindrome" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>

@@ -8,5 +8,7 @@ target 'Palindrome' do
   # Pods for Palindrome
   pod 'RealmSwift'
   pod 'IQKeyboardManager'
+  pod 'Swinject'
+  pod 'SwinjectStoryboard'
   
 end
