@@ -19,6 +19,7 @@ extension String {
 
 class Validation {
     class func checkIfIsPalindrome(word: String) -> Bool {
+        let word = word.uppercased()
         if word.isEmpty || word.count == 1 {
             return false
         }
