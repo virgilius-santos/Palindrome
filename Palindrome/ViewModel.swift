@@ -8,41 +8,35 @@
 
 import Foundation
 
-@objc protocol ViewModelDelegate {
-    func addWord()
-}
-
 class ViewModel: NSObject {
     
-    var isPalindrome: Box<Bool> = Box(false)
+    lazy var dataSource = WordSource.shared
     
-    var word: String = String()
+    lazy var isPalindrome: Box<Bool> = Box(false)
     
-    @IBOutlet weak var delegate: ViewModelDelegate?
+    lazy var word: String = String()
     
     func newWord(_ string: String?) {
         word = (string ?? "")
         isPalindrome.value = word.isPalindrome
     }
     
-    func saveWord() {
-        tteste.append(word)
+    func saveWord(completion: @escaping()->()) {
+        dataSource.saveWord(word)
         isPalindrome.value = false
-        delegate?.addWord()
+        completion()
     }
     
     func word(row: Int) -> String {
-        return tteste[row]
+        return dataSource.word(row: row)
     }
     
     func numberOfWords() -> Int {
-        return tteste.count
+        return dataSource.numberOfWords()
     }
     
     func deleteWord(row: Int, completion: @escaping()->()) {
-        tteste.remove(at: row)
+        dataSource.deleteWord(row: row)
         completion()
     }
 }
-
-var tteste: [String] = [String](repeating: "teste", count: 10)

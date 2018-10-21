@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             self.checkImageView.isHidden = !isPalidrome
             self.saveButton.isEnabled = isPalidrome
         }
+        
     }
     
     deinit {
@@ -41,7 +42,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func saveAction(_ sender: Any) {
-        viewModel.saveWord()
+        viewModel.saveWord() {
+            self.textField.text = String()
+            self.tableView.reloadData()
+        }
     }
     
 }
@@ -76,13 +80,6 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
-}
-
-extension ViewController: ViewModelDelegate {
-    func addWord() {
-        self.textField.text = String()
-        self.tableView.reloadData()
-    }
 }
 
 extension ViewController: UITextFieldDelegate {
