@@ -17,14 +17,27 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField! {
         didSet {
             textField.returnKeyType = .done
+            textField.accessibilityLabel = "textField"
         }
     }
     
-    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton! {
+        didSet {
+            saveButton.accessibilityLabel = "saveButton"
+        }
+    }
     
-    @IBOutlet weak var checkImageView: UIImageView!
+    @IBOutlet weak var checkImageView: UIImageView! {
+        didSet {
+            checkImageView.accessibilityLabel = "checkImageView"
+        }
+    }
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.accessibilityLabel = "tableView"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
