@@ -1,14 +1,25 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.0'
+use_frameworks!
+
+def swinject_pods
+    pod 'Swinject', '2.5.0'
+    pod 'SwinjectStoryboard', '2.1.0'
+end
 
 target 'Palindrome' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+    # Pods for Palindrome
+    pod 'RealmSwift', '3.11.1'
+    pod 'IQKeyboardManager', '6.2.0'
+    swinject_pods
+end
 
-  # Pods for Palindrome
-  pod 'RealmSwift'
-  pod 'IQKeyboardManager'
-  pod 'Swinject'
-  pod 'SwinjectStoryboard'
-  
+def testing_pods
+    pod 'Quick', '1.3.2'
+    pod 'Nimble', '7.3.1'
+    swinject_pods
+end
+
+target 'PalindromeTests' do
+    testing_pods
 end
