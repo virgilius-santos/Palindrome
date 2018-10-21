@@ -17,8 +17,8 @@ extension String {
     }
 }
 
-struct Validation {
-    static func checkIfIsPalindrome(word: String) -> Bool {
+class Validation {
+    class func checkIfIsPalindrome(word: String) -> Bool {
         if word.isEmpty || word.count == 1 {
             return false
         }
