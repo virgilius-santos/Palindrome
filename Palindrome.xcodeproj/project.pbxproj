@@ -12,6 +12,8 @@
 		187BB23D217BF05B008EAEDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BB23B217BF05B008EAEDC /* Main.storyboard */; };
 		187BB23F217BF05E008EAEDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BB23E217BF05E008EAEDC /* Assets.xcassets */; };
 		187BB242217BF05E008EAEDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BB240217BF05E008EAEDC /* LaunchScreen.storyboard */; };
+		187BB24B217BF7B9008EAEDC /* KeyboardUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */; };
+		EC69F041240DD805123A9F74 /* Pods_Palindrome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB23EE8A3D5CB9CE93A132E /* Pods_Palindrome.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		187BB23E217BF05E008EAEDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187BB241217BF05E008EAEDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187BB243217BF05E008EAEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtility.swift; sourceTree = "<group>"; };
+		498068D9044C416D8C3C719D /* Pods-Palindrome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palindrome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome.release.xcconfig"; sourceTree = "<group>"; };
+		89578893AAB53716F35AE74D /* Pods-Palindrome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palindrome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome.debug.xcconfig"; sourceTree = "<group>"; };
+		CFB23EE8A3D5CB9CE93A132E /* Pods_Palindrome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Palindrome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC69F041240DD805123A9F74 /* Pods_Palindrome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				187BB236217BF05B008EAEDC /* Palindrome */,
 				187BB235217BF05B008EAEDC /* Products */,
+				F038F608E43D7409121AF2DD /* Pods */,
+				ADC5C37EC6B4DAF69DCDA1AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,40 @@
 		187BB236217BF05B008EAEDC /* Palindrome */ = {
 			isa = PBXGroup;
 			children = (
+				187BB249217BF07F008EAEDC /* SupportFiles */,
 				187BB237217BF05B008EAEDC /* AppDelegate.swift */,
-				187BB239217BF05B008EAEDC /* ViewController.swift */,
 				187BB23B217BF05B008EAEDC /* Main.storyboard */,
+				187BB239217BF05B008EAEDC /* ViewController.swift */,
+			);
+			path = Palindrome;
+			sourceTree = "<group>";
+		};
+		187BB249217BF07F008EAEDC /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */,
 				187BB23E217BF05E008EAEDC /* Assets.xcassets */,
 				187BB240217BF05E008EAEDC /* LaunchScreen.storyboard */,
 				187BB243217BF05E008EAEDC /* Info.plist */,
 			);
-			path = Palindrome;
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		ADC5C37EC6B4DAF69DCDA1AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFB23EE8A3D5CB9CE93A132E /* Pods_Palindrome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F038F608E43D7409121AF2DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89578893AAB53716F35AE74D /* Pods-Palindrome.debug.xcconfig */,
+				498068D9044C416D8C3C719D /* Pods-Palindrome.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187BB246217BF05F008EAEDC /* Build configuration list for PBXNativeTarget "Palindrome" */;
 			buildPhases = (
+				747D1AD5E4BDD413BFF54907 /* [CP] Check Pods Manifest.lock */,
 				187BB230217BF05B008EAEDC /* Sources */,
 				187BB231217BF05B008EAEDC /* Frameworks */,
 				187BB232217BF05B008EAEDC /* Resources */,
+				2A0FA55D0A843274F3B70396 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +167,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A0FA55D0A843274F3B70396 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		747D1AD5E4BDD413BFF54907 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Palindrome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		187BB230217BF05B008EAEDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187BB24B217BF7B9008EAEDC /* KeyboardUtility.swift in Sources */,
 				187BB23A217BF05B008EAEDC /* ViewController.swift in Sources */,
 				187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */,
 			);
@@ -280,9 +369,11 @@
 		};
 		187BB247217BF05F008EAEDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89578893AAB53716F35AE74D /* Pods-Palindrome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR99UBUHUT;
 				INFOPLIST_FILE = Palindrome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +388,11 @@
 		};
 		187BB248217BF05F008EAEDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 498068D9044C416D8C3C719D /* Pods-Palindrome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR99UBUHUT;
 				INFOPLIST_FILE = Palindrome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
