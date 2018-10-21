@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     let describing = String(describing: ViewController.self)
     
+    var viewModel: ViewModelProtocol!
+    
     @IBOutlet weak var textField: UITextField! {
         didSet {
             textField.returnKeyType = .done
@@ -21,8 +23,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     
     @IBOutlet weak var checkImageView: UIImageView!
-    
-    var viewModel: ViewModelProtocol!
     
     @IBOutlet weak var tableView: UITableView!
     

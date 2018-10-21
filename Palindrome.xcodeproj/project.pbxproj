@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18572AE5217CA282008A196B /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AE4217CA282008A196B /* Assembly.swift */; };
+		18572AED217CABF0008A196B /* PalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AEC217CABF0008A196B /* PalindromeTests.swift */; };
 		187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB237217BF05B008EAEDC /* AppDelegate.swift */; };
 		187BB23A217BF05B008EAEDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB239217BF05B008EAEDC /* ViewController.swift */; };
 		187BB23D217BF05B008EAEDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BB23B217BF05B008EAEDC /* Main.storyboard */; };
@@ -22,8 +23,21 @@
 		EC69F041240DD805123A9F74 /* Pods_Palindrome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB23EE8A3D5CB9CE93A132E /* Pods_Palindrome.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		18572AEF217CABF0008A196B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187BB22C217BF05B008EAEDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187BB233217BF05B008EAEDC;
+			remoteInfo = Palindrome;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		18572AE4217CA282008A196B /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		18572AEA217CABF0008A196B /* PalindromeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalindromeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18572AEC217CABF0008A196B /* PalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTests.swift; sourceTree = "<group>"; };
+		18572AEE217CABF0008A196B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187BB234217BF05B008EAEDC /* Palindrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palindrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BB237217BF05B008EAEDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187BB239217BF05B008EAEDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18572AE7217CABF0008A196B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		187BB231217BF05B008EAEDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,10 +75,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18572AEB217CABF0008A196B /* PalindromeTests */ = {
+			isa = PBXGroup;
+			children = (
+				18572AEC217CABF0008A196B /* PalindromeTests.swift */,
+				18572AEE217CABF0008A196B /* Info.plist */,
+			);
+			path = PalindromeTests;
+			sourceTree = "<group>";
+		};
 		187BB22B217BF05B008EAEDC = {
 			isa = PBXGroup;
 			children = (
 				187BB236217BF05B008EAEDC /* Palindrome */,
+				18572AEB217CABF0008A196B /* PalindromeTests */,
 				187BB235217BF05B008EAEDC /* Products */,
 				F038F608E43D7409121AF2DD /* Pods */,
 				ADC5C37EC6B4DAF69DCDA1AF /* Frameworks */,
@@ -68,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				187BB234217BF05B008EAEDC /* Palindrome.app */,
+				18572AEA217CABF0008A196B /* PalindromeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +160,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		18572AE9217CABF0008A196B /* PalindromeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18572AF3217CABF0008A196B /* Build configuration list for PBXNativeTarget "PalindromeTests" */;
+			buildPhases = (
+				18572AE6217CABF0008A196B /* Sources */,
+				18572AE7217CABF0008A196B /* Frameworks */,
+				18572AE8217CABF0008A196B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18572AF0217CABF0008A196B /* PBXTargetDependency */,
+			);
+			name = PalindromeTests;
+			productName = PalindromeTests;
+			productReference = 18572AEA217CABF0008A196B /* PalindromeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		187BB233217BF05B008EAEDC /* Palindrome */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187BB246217BF05F008EAEDC /* Build configuration list for PBXNativeTarget "Palindrome" */;
@@ -157,6 +207,10 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Virgilius Santos";
 				TargetAttributes = {
+					18572AE9217CABF0008A196B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 187BB233217BF05B008EAEDC;
+					};
 					187BB233217BF05B008EAEDC = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -176,11 +230,19 @@
 			projectRoot = "";
 			targets = (
 				187BB233217BF05B008EAEDC /* Palindrome */,
+				18572AE9217CABF0008A196B /* PalindromeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18572AE8217CABF0008A196B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		187BB232217BF05B008EAEDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +311,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18572AE6217CABF0008A196B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18572AED217CABF0008A196B /* PalindromeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		187BB230217BF05B008EAEDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +336,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18572AF0217CABF0008A196B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187BB233217BF05B008EAEDC /* Palindrome */;
+			targetProxy = 18572AEF217CABF0008A196B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		187BB23B217BF05B008EAEDC /* Main.storyboard */ = {
@@ -287,6 +365,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		18572AF1217CABF0008A196B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR99UBUHUT;
+				INFOPLIST_FILE = PalindromeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.organization.PalindromeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Palindrome.app/Palindrome";
+			};
+			name = Debug;
+		};
+		18572AF2217CABF0008A196B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR99UBUHUT;
+				INFOPLIST_FILE = PalindromeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.organization.PalindromeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Palindrome.app/Palindrome";
+			};
+			name = Release;
+		};
 		187BB244217BF05F008EAEDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -444,6 +562,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18572AF3217CABF0008A196B /* Build configuration list for PBXNativeTarget "PalindromeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18572AF1217CABF0008A196B /* Debug */,
+				18572AF2217CABF0008A196B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		187BB22F217BF05B008EAEDC /* Build configuration list for PBXProject "Palindrome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
