@@ -3,7 +3,9 @@
 this is a demo application where you can:
 - insert a word,
 - check if the word is a palindrome
-- and add the word to a database.
+- add the word to a database.
+- view all stored words 
+- remove the word from a database.
 
 Although simple we use:
 - MVVM
