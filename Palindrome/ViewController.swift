@@ -34,24 +34,34 @@ class ViewController: UIViewController {
             self.checkImageView.isHidden = !isPalidrome
             self.saveButton.isEnabled = isPalidrome
         }
-        
-        viewModel.newWordAdd.bind(key: describing) { (_) in
-            self.textField.text = String()
-        }
     }
     
     deinit {
         viewModel.isPalindrome.removeBind(key: describing)
-        viewModel.newWordAdd.removeBind(key: describing)
     }
 
     @IBAction func saveAction(_ sender: Any) {
-        viewModel.saveWord(textField.text)
+        viewModel.saveWord()
     }
     
 }
 
 extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+            self.viewModel.deleteWord(row: indexPath.row) {
+                tableView.beginUpdates()
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+                tableView.endUpdates()
+            }
+        }
+        
+        return [deleteAction]
+    }
     
 }
 
@@ -62,10 +72,17 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = viewModel.word(forRow: indexPath.row)
+        cell.textLabel?.text = viewModel.word(row: indexPath.row)
         return cell
     }
     
+}
+
+extension ViewController: ViewModelDelegate {
+    func addWord() {
+        self.textField.text = String()
+        self.tableView.reloadData()
+    }
 }
 
 extension ViewController: UITextFieldDelegate {
@@ -90,7 +107,9 @@ extension ViewController: UITextFieldDelegate {
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer =     UITapGestureRecognizer(target: self, action:    #selector(UIViewController.dismissKeyboard))
+        let tap: UITapGestureRecognizer
+            = UITapGestureRecognizer(target: self,
+                                     action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
