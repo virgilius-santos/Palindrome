@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let describing = String(describing: ViewController.self)
+    
     @IBOutlet weak var textField: UITextField! {
         didSet {
             textField.returnKeyType = .done
         }
     }
+    
+    @IBOutlet weak var saveButton: UIButton!
     
     @IBOutlet weak var checkImageView: UIImageView!
     
@@ -24,15 +28,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
         
-        viewModel.isPalindrome.bind(key: String(describing: ViewController.self)) { (isPalidrome) in
+        viewModel.isPalindrome.bind(key: describing) { (isPalidrome) in
             self.checkImageView.isHidden = !isPalidrome
+            self.saveButton.isEnabled = isPalidrome
+        }
+        
+        viewModel.newWordAdd.bind(key: describing) { (_) in
+            self.textField.text = String()
         }
     }
     
     deinit {
-        viewModel.isPalindrome.removeBind(key: String(describing: ViewController.self))
+        viewModel.isPalindrome.removeBind(key: describing)
+        viewModel.newWordAdd.removeBind(key: describing)
     }
 
+    @IBAction func saveAction(_ sender: Any) {
+        viewModel.saveWord(textField.text)
+    }
+    
 }
 
 extension ViewController: UITextFieldDelegate {
@@ -48,11 +62,9 @@ extension ViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        viewModel.saveWord(textField.text)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        viewModel.saveWord(textField.text)
         textField.resignFirstResponder()
         return true
     }

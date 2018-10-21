@@ -12,11 +12,15 @@ class ViewModel: NSObject {
     
     var isPalindrome: Box<Bool> = Box(false)
     
+    var newWordAdd: Box<String> = Box(String())
+    
     func newWord(_ string: String) {
         
+        isPalindrome.value = true
     }
     
     func saveWord(_ string: String?) {
-        
+        print("save")
+        newWordAdd.value.removeAll()
     }
 }
