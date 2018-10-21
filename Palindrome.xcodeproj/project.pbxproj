@@ -15,6 +15,7 @@
 		187BB24B217BF7B9008EAEDC /* KeyboardUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */; };
 		187BB24D217C0C71008EAEDC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24C217C0C71008EAEDC /* ViewModel.swift */; };
 		187BB250217C0CE9008EAEDC /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24F217C0CE9008EAEDC /* Box.swift */; };
+		187BB252217C1651008EAEDC /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB251217C1651008EAEDC /* Validation.swift */; };
 		EC69F041240DD805123A9F74 /* Pods_Palindrome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB23EE8A3D5CB9CE93A132E /* Pods_Palindrome.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtility.swift; sourceTree = "<group>"; };
 		187BB24C217C0C71008EAEDC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		187BB24F217C0CE9008EAEDC /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		187BB251217C1651008EAEDC /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		498068D9044C416D8C3C719D /* Pods-Palindrome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palindrome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome.release.xcconfig"; sourceTree = "<group>"; };
 		89578893AAB53716F35AE74D /* Pods-Palindrome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palindrome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome.debug.xcconfig"; sourceTree = "<group>"; };
 		CFB23EE8A3D5CB9CE93A132E /* Pods_Palindrome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Palindrome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 			children = (
 				187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */,
 				187BB24F217C0CE9008EAEDC /* Box.swift */,
+				187BB251217C1651008EAEDC /* Validation.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				187BB23A217BF05B008EAEDC /* ViewController.swift in Sources */,
 				187BB24D217C0C71008EAEDC /* ViewModel.swift in Sources */,
 				187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */,
+				187BB252217C1651008EAEDC /* Validation.swift in Sources */,
 				187BB250217C0CE9008EAEDC /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

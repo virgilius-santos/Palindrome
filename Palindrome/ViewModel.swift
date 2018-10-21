@@ -14,13 +14,12 @@ class ViewModel: NSObject {
     
     var newWordAdd: Box<String> = Box(String())
     
-    func newWord(_ string: String) {
-        
-        isPalindrome.value = true
+    func newWord(_ string: String?) {
+        isPalindrome.value = (string ?? "").isPalindrome
     }
     
     func saveWord(_ string: String?) {
-        print("save")
         newWordAdd.value.removeAll()
+        isPalindrome.value = false
     }
 }

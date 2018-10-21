@@ -55,13 +55,14 @@ extension ViewController: UITextFieldDelegate {
         if (string == "\n") {
             textField.resignFirstResponder()
         }
-        
-        viewModel.newWord(textField.text ?? "" + string)
+       
         
         return true
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        let text = textField.text
+        viewModel.newWord(text)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
