@@ -22,4 +22,12 @@ class ViewModel: NSObject {
         newWordAdd.value.removeAll()
         isPalindrome.value = false
     }
+    
+    func word(forRow row: Int) -> String {
+        return String(row)
+    }
+    
+    func numberOfWords() -> Int {
+        return 10
+    }
 }
