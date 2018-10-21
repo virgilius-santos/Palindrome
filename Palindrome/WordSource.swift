@@ -24,6 +24,11 @@ class WordSource: WordSourceProtocol {
     init() {}
     
     func saveWord(_ string: String) {
+        
+        if words.contains(where: {$0.string.elementsEqual(string)}) {
+            return
+        }
+        
         let word = Word()
         word.string = string
         

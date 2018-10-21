@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		098872EB1A9C24FD9C650BD4 /* Pods_PalindromeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07511F6BCCA5B3609164ED12 /* Pods_PalindromeTests.framework */; };
 		18572AE5217CA282008A196B /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AE4217CA282008A196B /* Assembly.swift */; };
-		18572AED217CABF0008A196B /* PalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AEC217CABF0008A196B /* PalindromeTests.swift */; };
+		18572AF5217CB467008A196B /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AF4217CB467008A196B /* ViewModelTests.swift */; };
+		18572AF7217CC1A5008A196B /* WordSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AF6217CC1A5008A196B /* WordSourceTest.swift */; };
 		187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB237217BF05B008EAEDC /* AppDelegate.swift */; };
 		187BB23A217BF05B008EAEDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB239217BF05B008EAEDC /* ViewController.swift */; };
 		187BB23D217BF05B008EAEDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BB23B217BF05B008EAEDC /* Main.storyboard */; };
@@ -38,8 +39,9 @@
 		07511F6BCCA5B3609164ED12 /* Pods_PalindromeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalindromeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18572AE4217CA282008A196B /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		18572AEA217CABF0008A196B /* PalindromeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalindromeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18572AEC217CABF0008A196B /* PalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTests.swift; sourceTree = "<group>"; };
 		18572AEE217CABF0008A196B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18572AF4217CB467008A196B /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		18572AF6217CC1A5008A196B /* WordSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSourceTest.swift; sourceTree = "<group>"; };
 		187BB234217BF05B008EAEDC /* Palindrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palindrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BB237217BF05B008EAEDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187BB239217BF05B008EAEDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +85,8 @@
 		18572AEB217CABF0008A196B /* PalindromeTests */ = {
 			isa = PBXGroup;
 			children = (
-				18572AEC217CABF0008A196B /* PalindromeTests.swift */,
+				18572AF4217CB467008A196B /* ViewModelTests.swift */,
+				18572AF6217CC1A5008A196B /* WordSourceTest.swift */,
 				18572AEE217CABF0008A196B /* Info.plist */,
 			);
 			path = PalindromeTests;
@@ -375,7 +378,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18572AED217CABF0008A196B /* PalindromeTests.swift in Sources */,
+				18572AF5217CB467008A196B /* ViewModelTests.swift in Sources */,
+				18572AF7217CC1A5008A196B /* WordSourceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
