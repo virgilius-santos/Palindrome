@@ -1,34 +1,16 @@
 PODS:
   - IQKeyboardManager (6.5.6)
-  - Nimble (9.0.0)
-  - Quick (3.1.2)
-  - Realm (10.7.2):
-    - Realm/Headers (= 10.7.2)
-  - Realm/Headers (10.7.2)
-  - RealmSwift (10.7.2):
-    - Realm (= 10.7.2)
 
 DEPENDENCIES:
-  - IQKeyboardManager
-  - Nimble
-  - Quick
-  - RealmSwift
+  - IQKeyboardManager (= 6.5.6)
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManager
-    - Nimble
-    - Quick
-    - Realm
-    - RealmSwift
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
-  Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
-  Quick: 60f0ea3b8e0cfc0df3259a5c06a238ad8b3c46e0
-  Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
-  RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
 
-PODFILE CHECKSUM: 523b314476b5bfe7cd14e1e42e66071e8479802e
+PODFILE CHECKSUM: f9bb9e75bcff308438b90f38673ed18b97cf4371
 
 COCOAPODS: 1.10.1
