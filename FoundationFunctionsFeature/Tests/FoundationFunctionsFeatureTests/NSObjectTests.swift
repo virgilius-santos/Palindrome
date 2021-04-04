@@ -1,7 +1,7 @@
 import XCTest
-import FoundationFuncionsFeature
+import FoundationFunctionsFeature
 
-final class FoundationFuncionsFeatureTests: XCTestCase {
+final class NSObjectTests: XCTestCase {
     func test_identifier() {
       XCTAssertEqual(NSObject.identifier, "NSObject")
       XCTAssertEqual(NSObject().identifier, "NSObject")
