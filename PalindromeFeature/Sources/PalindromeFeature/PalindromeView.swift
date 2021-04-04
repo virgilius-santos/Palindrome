@@ -3,7 +3,7 @@ import UIKit
 import FunctionsFeature
 import ResourcesFeature
 import UIKitFunctionsFeature
-import FoundationFuncionsFeature
+import FoundationFunctionsFeature
 
 private extension String {
   static let titleLabel = "\(PalindromeView.identifier)\\titleLabel"

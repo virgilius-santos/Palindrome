@@ -14,7 +14,7 @@ let package = Package(
     .package(path: "./UIKitFunctionsFeature"),
     .package(path: "./FunctionsFeature"),
     .package(path: "./ResourcesFeature"),
-    .package(path: "./FoundationFuncionsFeature"),
+    .package(path: "./FoundationFunctionsFeature"),
     .package(path: "./BoxFeature")
   ],
   targets: [
@@ -24,7 +24,7 @@ let package = Package(
         "UIKitFunctionsFeature",
         "FunctionsFeature",
         "ResourcesFeature",
-        "FoundationFuncionsFeature",
+        "FoundationFunctionsFeature",
         "BoxFeature"
       ]),
     .testTarget(

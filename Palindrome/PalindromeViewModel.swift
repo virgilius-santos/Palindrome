@@ -2,6 +2,7 @@
 import Foundation
 import PalindromeFeature
 import FunctionsFeature
+import BoxFeature
 
 extension PalindromeViewModel {
   static let live: PalindromeViewModel = {

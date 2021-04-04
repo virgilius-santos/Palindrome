@@ -62,7 +62,7 @@
 		187BB253217C2C74008EAEDC /* WordSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSource.swift; sourceTree = "<group>"; };
 		187BB255217C3512008EAEDC /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		18A408C3261A4F600028BE70 /* BoxFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BoxFeature; sourceTree = "<group>"; };
-		18A408C7261A54320028BE70 /* FoundationFuncionsFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FoundationFuncionsFeature; sourceTree = "<group>"; };
+		18A408CE261A5AEE0028BE70 /* FoundationFunctionsFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FoundationFunctionsFeature; sourceTree = "<group>"; };
 		18CBAE152617E1E000C1FE2B /* FunctionsFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FunctionsFeature; sourceTree = "<group>"; };
 		41FB1745442789654D7AAA64 /* Pods-PalindromeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalindromeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PalindromeTests/Pods-PalindromeTests.release.xcconfig"; sourceTree = "<group>"; };
 		498068D9044C416D8C3C719D /* Pods-Palindrome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palindrome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				1808BD742617F99A00393C5B /* Palindrome.playground */,
-				18A408C7261A54320028BE70 /* FoundationFuncionsFeature */,
+				18A408CE261A5AEE0028BE70 /* FoundationFunctionsFeature */,
 				18A408C3261A4F600028BE70 /* BoxFeature */,
 				1861C68626188342003E522A /* ResourcesFeature */,
 				18CBAE152617E1E000C1FE2B /* FunctionsFeature */,
