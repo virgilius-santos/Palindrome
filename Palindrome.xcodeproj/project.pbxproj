@@ -16,7 +16,6 @@
 		187BB242217BF05E008EAEDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BB240217BF05E008EAEDC /* LaunchScreen.storyboard */; };
 		187BB24B217BF7B9008EAEDC /* KeyboardUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */; };
 		187BB24D217C0C71008EAEDC /* PalindromeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24C217C0C71008EAEDC /* PalindromeViewModel.swift */; };
-		187BB252217C1651008EAEDC /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB251217C1651008EAEDC /* Validation.swift */; };
 		187BB254217C2C74008EAEDC /* WordSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB253217C2C74008EAEDC /* WordSource.swift */; };
 		187BB256217C3512008EAEDC /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB255217C3512008EAEDC /* Word.swift */; };
 		EC69F041240DD805123A9F74 /* Pods_Palindrome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB23EE8A3D5CB9CE93A132E /* Pods_Palindrome.framework */; };
@@ -58,7 +57,6 @@
 		187BB243217BF05E008EAEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtility.swift; sourceTree = "<group>"; };
 		187BB24C217C0C71008EAEDC /* PalindromeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeViewModel.swift; sourceTree = "<group>"; };
-		187BB251217C1651008EAEDC /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		187BB253217C2C74008EAEDC /* WordSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSource.swift; sourceTree = "<group>"; };
 		187BB255217C3512008EAEDC /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		18A408C3261A4F600028BE70 /* BoxFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BoxFeature; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */,
-				187BB251217C1651008EAEDC /* Validation.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -436,7 +433,6 @@
 				187BB256217C3512008EAEDC /* Word.swift in Sources */,
 				187BB24D217C0C71008EAEDC /* PalindromeViewModel.swift in Sources */,
 				187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */,
-				187BB252217C1651008EAEDC /* Validation.swift in Sources */,
 				187BB254217C2C74008EAEDC /* WordSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
