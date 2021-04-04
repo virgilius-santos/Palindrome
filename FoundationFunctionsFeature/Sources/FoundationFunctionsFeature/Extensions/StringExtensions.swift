@@ -6,3 +6,7 @@ public extension String {
     self[index(startIndex, offsetBy: i)]
   }
 }
+
+public func onlyAlphanumerics(_ string: String) -> String {
+  string.components(separatedBy: CharacterSet.alphanumerics.inverted).joined(separator: "")
+}
