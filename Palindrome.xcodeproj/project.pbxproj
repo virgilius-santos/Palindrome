@@ -3,23 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		098872EB1A9C24FD9C650BD4 /* Pods_PalindromeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07511F6BCCA5B3609164ED12 /* Pods_PalindromeTests.framework */; };
-		18572AE5217CA282008A196B /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AE4217CA282008A196B /* Assembly.swift */; };
 		18572AF5217CB467008A196B /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AF4217CB467008A196B /* ViewModelTests.swift */; };
 		18572AF7217CC1A5008A196B /* WordSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AF6217CC1A5008A196B /* WordSourceTest.swift */; };
 		18572AFF217CC683008A196B /* PalindromeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18572AFE217CC683008A196B /* PalindromeUITests.swift */; };
+		1861C6A42618CB2B003E522A /* PalindromeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 1861C6A32618CB2B003E522A /* PalindromeFeature */; };
 		187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB237217BF05B008EAEDC /* AppDelegate.swift */; };
-		187BB23A217BF05B008EAEDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB239217BF05B008EAEDC /* ViewController.swift */; };
-		187BB23D217BF05B008EAEDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BB23B217BF05B008EAEDC /* Main.storyboard */; };
-		187BB23F217BF05E008EAEDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BB23E217BF05E008EAEDC /* Assets.xcassets */; };
 		187BB242217BF05E008EAEDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BB240217BF05E008EAEDC /* LaunchScreen.storyboard */; };
 		187BB24B217BF7B9008EAEDC /* KeyboardUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */; };
-		187BB24D217C0C71008EAEDC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24C217C0C71008EAEDC /* ViewModel.swift */; };
-		187BB250217C0CE9008EAEDC /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24F217C0CE9008EAEDC /* Box.swift */; };
+		187BB24D217C0C71008EAEDC /* PalindromeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24C217C0C71008EAEDC /* PalindromeViewModel.swift */; };
 		187BB252217C1651008EAEDC /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB251217C1651008EAEDC /* Validation.swift */; };
 		187BB254217C2C74008EAEDC /* WordSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB253217C2C74008EAEDC /* WordSource.swift */; };
 		187BB256217C3512008EAEDC /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB255217C3512008EAEDC /* Word.swift */; };
@@ -45,7 +41,8 @@
 
 /* Begin PBXFileReference section */
 		07511F6BCCA5B3609164ED12 /* Pods_PalindromeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalindromeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		18572AE4217CA282008A196B /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		1808BD702617F97A00393C5B /* PalindromeFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PalindromeFeature; sourceTree = "<group>"; };
+		1808BD742617F99A00393C5B /* Palindrome.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Palindrome.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		18572AEA217CABF0008A196B /* PalindromeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalindromeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18572AEE217CABF0008A196B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18572AF4217CB467008A196B /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
@@ -53,19 +50,20 @@
 		18572AFC217CC683008A196B /* PalindromeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalindromeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18572AFE217CC683008A196B /* PalindromeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeUITests.swift; sourceTree = "<group>"; };
 		18572B00217CC683008A196B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1861C67426186FBC003E522A /* UIKitFunctionsFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIKitFunctionsFeature; sourceTree = "<group>"; };
+		1861C68626188342003E522A /* ResourcesFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ResourcesFeature; sourceTree = "<group>"; };
 		187BB234217BF05B008EAEDC /* Palindrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palindrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BB237217BF05B008EAEDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		187BB239217BF05B008EAEDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		187BB23C217BF05B008EAEDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		187BB23E217BF05E008EAEDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187BB241217BF05E008EAEDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187BB243217BF05E008EAEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtility.swift; sourceTree = "<group>"; };
-		187BB24C217C0C71008EAEDC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		187BB24F217C0CE9008EAEDC /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		187BB24C217C0C71008EAEDC /* PalindromeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeViewModel.swift; sourceTree = "<group>"; };
 		187BB251217C1651008EAEDC /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		187BB253217C2C74008EAEDC /* WordSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSource.swift; sourceTree = "<group>"; };
 		187BB255217C3512008EAEDC /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		18A408C3261A4F600028BE70 /* BoxFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BoxFeature; sourceTree = "<group>"; };
+		18A408C7261A54320028BE70 /* FoundationFuncionsFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FoundationFuncionsFeature; sourceTree = "<group>"; };
+		18CBAE152617E1E000C1FE2B /* FunctionsFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FunctionsFeature; sourceTree = "<group>"; };
 		41FB1745442789654D7AAA64 /* Pods-PalindromeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalindromeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PalindromeTests/Pods-PalindromeTests.release.xcconfig"; sourceTree = "<group>"; };
 		498068D9044C416D8C3C719D /* Pods-Palindrome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palindrome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome.release.xcconfig"; sourceTree = "<group>"; };
 		78977BC9270A7CBDA9B3A284 /* Pods-PalindromeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalindromeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PalindromeTests/Pods-PalindromeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1861C6A42618CB2B003E522A /* PalindromeFeature in Frameworks */,
 				EC69F041240DD805123A9F74 /* Pods_Palindrome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,11 +121,18 @@
 		187BB22B217BF05B008EAEDC = {
 			isa = PBXGroup;
 			children = (
+				1808BD742617F99A00393C5B /* Palindrome.playground */,
+				18A408C7261A54320028BE70 /* FoundationFuncionsFeature */,
+				18A408C3261A4F600028BE70 /* BoxFeature */,
+				1861C68626188342003E522A /* ResourcesFeature */,
+				18CBAE152617E1E000C1FE2B /* FunctionsFeature */,
+				1808BD702617F97A00393C5B /* PalindromeFeature */,
+				1861C67426186FBC003E522A /* UIKitFunctionsFeature */,
 				187BB236217BF05B008EAEDC /* Palindrome */,
 				18572AEB217CABF0008A196B /* PalindromeTests */,
 				18572AFD217CC683008A196B /* PalindromeUITests */,
-				187BB235217BF05B008EAEDC /* Products */,
 				F038F608E43D7409121AF2DD /* Pods */,
+				187BB235217BF05B008EAEDC /* Products */,
 				ADC5C37EC6B4DAF69DCDA1AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -145,9 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				187BB249217BF07F008EAEDC /* SupportFiles */,
-				187BB23B217BF05B008EAEDC /* Main.storyboard */,
-				187BB239217BF05B008EAEDC /* ViewController.swift */,
-				187BB24C217C0C71008EAEDC /* ViewModel.swift */,
+				187BB24C217C0C71008EAEDC /* PalindromeViewModel.swift */,
 				187BB253217C2C74008EAEDC /* WordSource.swift */,
 				187BB255217C3512008EAEDC /* Word.swift */,
 				187BB24E217C0CD2008EAEDC /* Util */,
@@ -159,10 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				187BB237217BF05B008EAEDC /* AppDelegate.swift */,
-				187BB23E217BF05E008EAEDC /* Assets.xcassets */,
 				187BB240217BF05E008EAEDC /* LaunchScreen.storyboard */,
 				187BB243217BF05E008EAEDC /* Info.plist */,
-				18572AE4217CA282008A196B /* Assembly.swift */,
 			);
 			name = SupportFiles;
 			sourceTree = "<group>";
@@ -171,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */,
-				187BB24F217C0CE9008EAEDC /* Box.swift */,
 				187BB251217C1651008EAEDC /* Validation.swift */,
 			);
 			name = Util;
@@ -253,6 +254,9 @@
 			dependencies = (
 			);
 			name = Palindrome;
+			packageProductDependencies = (
+				1861C6A32618CB2B003E522A /* PalindromeFeature */,
+			);
 			productName = Palindrome;
 			productReference = 187BB234217BF05B008EAEDC /* Palindrome.app */;
 			productType = "com.apple.product-type.application";
@@ -264,7 +268,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Virgilius Santos";
 				TargetAttributes = {
 					18572AE9217CABF0008A196B = {
@@ -320,8 +324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				187BB242217BF05E008EAEDC /* LaunchScreen.storyboard in Resources */,
-				187BB23F217BF05E008EAEDC /* Assets.xcassets in Resources */,
-				187BB23D217BF05B008EAEDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,26 +336,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PalindromeTests/Pods-PalindromeTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-PalindromeTests/Pods-PalindromeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-PalindromeTests/Pods-PalindromeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PalindromeTests/Pods-PalindromeTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PalindromeTests/Pods-PalindromeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2A0FA55D0A843274F3B70396 /* [CP] Embed Pods Frameworks */ = {
@@ -362,28 +353,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Palindrome/Pods-Palindrome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Palindrome/Pods-Palindrome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Palindrome/Pods-Palindrome-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Palindrome/Pods-Palindrome-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4450EED926B5B90238A631EC /* [CP] Check Pods Manifest.lock */ = {
@@ -456,13 +434,10 @@
 			files = (
 				187BB24B217BF7B9008EAEDC /* KeyboardUtility.swift in Sources */,
 				187BB256217C3512008EAEDC /* Word.swift in Sources */,
-				187BB23A217BF05B008EAEDC /* ViewController.swift in Sources */,
-				187BB24D217C0C71008EAEDC /* ViewModel.swift in Sources */,
-				18572AE5217CA282008A196B /* Assembly.swift in Sources */,
+				187BB24D217C0C71008EAEDC /* PalindromeViewModel.swift in Sources */,
 				187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */,
 				187BB252217C1651008EAEDC /* Validation.swift in Sources */,
 				187BB254217C2C74008EAEDC /* WordSource.swift in Sources */,
-				187BB250217C0CE9008EAEDC /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,14 +457,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		187BB23B217BF05B008EAEDC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				187BB23C217BF05B008EAEDC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		187BB240217BF05E008EAEDC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -516,7 +483,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.organization.PalindromeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Palindrome.app/Palindrome";
 			};
@@ -537,7 +504,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.organization.PalindromeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Palindrome.app/Palindrome";
 			};
@@ -556,7 +523,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.organization.PalindromeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Palindrome;
 			};
@@ -575,7 +542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.organization.PalindromeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Palindrome;
 			};
@@ -607,6 +574,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -639,6 +607,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -668,6 +637,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -693,6 +663,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -711,7 +682,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.organization.Palindrome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -730,7 +701,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.organization.Palindrome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -775,6 +746,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1861C6A32618CB2B003E522A /* PalindromeFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PalindromeFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 187BB22C217BF05B008EAEDC /* Project object */;
 }
