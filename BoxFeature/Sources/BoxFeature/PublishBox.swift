@@ -1,11 +1,11 @@
 
 import Foundation
 
-public final class Box<T> {
+public class PublishBox<T> {
   
   public typealias Listener = (T) -> ()
   
-  public var value: T {
+  public var value: Optional<T> = .none {
     didSet {
       updateListeners()
     }
@@ -13,14 +13,12 @@ public final class Box<T> {
   
   private var listeners: [String: Listener]
   
-  public init(_ value: T) {
-    self.value = value
-    self.listeners = [String: Listener]()
+  public init() {
+    self.listeners = [String:Listener]()
   }
   
   public func bind(key: String, listener: @escaping Listener) {
     listeners[key] = (listener)
-    updateListeners()
   }
   
   public func removeBind(key: String) {
@@ -28,7 +26,9 @@ public final class Box<T> {
   }
   
   func updateListeners() {
-    listeners.values.forEach({$0(value)})
+    if case .some(let v) = value {
+      listeners.values.forEach({$0(v)})
+    }
   }
   
   deinit {
