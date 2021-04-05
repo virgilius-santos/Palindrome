@@ -34,4 +34,8 @@ final class PalindromeCheckTests: XCTestCase {
   func test_invalid_palindrome_twoDifferentLetters() {
     XCTAssertFalse(checkIfIsPalindrome(word: "ab"))
   }
+  
+  func test_valid_palindrome_phrase() {
+    XCTAssert(checkIfIsPalindrome(word: "Socorram-me, subi no ônibus em Marrocos"))
+  }
 }
