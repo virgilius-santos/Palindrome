@@ -14,8 +14,8 @@
 		187BB238217BF05B008EAEDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB237217BF05B008EAEDC /* AppDelegate.swift */; };
 		187BB242217BF05E008EAEDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BB240217BF05E008EAEDC /* LaunchScreen.storyboard */; };
 		187BB24B217BF7B9008EAEDC /* KeyboardUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB24A217BF7B9008EAEDC /* KeyboardUtility.swift */; };
-		18A408F4261A73E90028BE70 /* WordDataSourceLive in Frameworks */ = {isa = PBXBuildFile; productRef = 18A408F3261A73E90028BE70 /* WordDataSourceLive */; };
 		18A408F9261A742C0028BE70 /* PalindromeFeatureLive in Frameworks */ = {isa = PBXBuildFile; productRef = 18A408F8261A742C0028BE70 /* PalindromeFeatureLive */; };
+		18A40913261AFC490028BE70 /* WordDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 18A40912261AFC490028BE70 /* WordDataSource */; };
 		EC69F041240DD805123A9F74 /* Pods_Palindrome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB23EE8A3D5CB9CE93A132E /* Pods_Palindrome.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A408F4261A73E90028BE70 /* WordDataSourceLive in Frameworks */,
+				18A40913261AFC490028BE70 /* WordDataSource in Frameworks */,
 				18A408F9261A742C0028BE70 /* PalindromeFeatureLive in Frameworks */,
 				EC69F041240DD805123A9F74 /* Pods_Palindrome.framework in Frameworks */,
 			);
@@ -244,8 +244,8 @@
 			);
 			name = Palindrome;
 			packageProductDependencies = (
-				18A408F3261A73E90028BE70 /* WordDataSourceLive */,
 				18A408F8261A742C0028BE70 /* PalindromeFeatureLive */,
+				18A40912261AFC490028BE70 /* WordDataSource */,
 			);
 			productName = Palindrome;
 			productReference = 187BB234217BF05B008EAEDC /* Palindrome.app */;
@@ -717,13 +717,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		18A408F3261A73E90028BE70 /* WordDataSourceLive */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = WordDataSourceLive;
-		};
 		18A408F8261A742C0028BE70 /* PalindromeFeatureLive */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PalindromeFeatureLive;
+		};
+		18A40912261AFC490028BE70 /* WordDataSource */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WordDataSource;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

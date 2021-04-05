@@ -2,7 +2,7 @@
 import UIKit
 import PalindromeFeature
 import PalindromeFeatureLive
-import WordDataSourceLive
+import WordDataSource
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +13,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     KeyboardManager.shared.enable = true
     
-    let vc = PalindromeViewController(viewModel: .live(dataSource: .live))
+    let vc = PalindromeViewController(viewModel: .live(dataSource: .memory))
     window!.rootViewController = vc
     
     window!.makeKeyAndVisible()
