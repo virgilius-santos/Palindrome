@@ -35,13 +35,13 @@ let package = Package(
         "WordDataSource",
       ]
     ),
-    .testTarget(
-      name: "PalindromeFeatureTests",
-      dependencies: ["PalindromeFeature"]
-    ),
     .target(
       name: "PalindromeFeatureLive",
       dependencies: ["PalindromeFeature"]
+    ),
+    .testTarget(
+      name: "PalindromeFeatureTests",
+      dependencies: ["PalindromeFeatureLive"]
     ),
   ]
 )
