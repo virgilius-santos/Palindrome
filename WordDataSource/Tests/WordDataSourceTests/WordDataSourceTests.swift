@@ -23,6 +23,20 @@ final class WordDataSourceTests: XCTestCase {
     XCTAssertEqual(sut.numberOfWords(), 0)
   }
   
+  func test_add_word_sharing_data() {
+    let sut0 = makeSut()
+    
+    sut0.saveWord("dummy")
+    
+    let sut1 = makeSut()
+    XCTAssertEqual(sut1.numberOfWords(), 1)
+    XCTAssertEqual(sut1.word(0), "dummy")
+    
+    sut1.deleteWord(0)
+    XCTAssertEqual(sut1.numberOfWords(), 0)
+    XCTAssertEqual(sut0.numberOfWords(), 0)
+  }
+  
   func makeSut(_ function: String = #function) -> WordDataSource {
     Realm.Configuration.defaultConfiguration.inMemoryIdentifier = function
     let sut = WordDataSource.live
