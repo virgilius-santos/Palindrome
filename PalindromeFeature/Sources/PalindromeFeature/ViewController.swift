@@ -44,7 +44,7 @@ public class PalindromeViewController: UIViewController {
     }
     
     viewModel.showError.bind(key: identifier) { [weak self] in
-      let vc = UIAlertController(title: "Attention", message: "Invalid Palindrome", preferredStyle: .alert)
+      let vc = UIAlertController(title: "Atenção", message: "Palindromo inválido!", preferredStyle: .alert)
       vc.addAction(.init(title: "Ok", style: .default))
       self?.present(vc, animated: true, completion: nil)
     }
