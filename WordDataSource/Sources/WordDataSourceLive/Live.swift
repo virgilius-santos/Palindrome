@@ -4,14 +4,8 @@ import WordDataSource
 import RealmSwift
 import os.log
 
-struct Environment {
-  var realm: Realm = try! Realm()
-}
-
-var Current = Environment()
-
 public extension WordDataSource {
-  static let live: WordDataSource = {
+  static var live: WordDataSource {
     
     let dataSource = WordDS()
     
@@ -21,11 +15,15 @@ public extension WordDataSource {
       numberOfWords: { dataSource.words.count },
       word: { dataSource.words[$0].string }
     )
-  }()
+  }
 }
 
 private class WordDS {
-  private var realm: Realm = Current.realm
+  private var realm: Realm = try! Realm()
+  
+  init() {
+    Realm.Configuration.defaultConfiguration.inMemoryIdentifier = "WordDS"
+  }
   
   private(set) lazy var words = realm.objects(Word.self).sorted(byKeyPath: "string")
   

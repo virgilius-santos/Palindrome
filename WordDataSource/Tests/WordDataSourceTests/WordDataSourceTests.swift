@@ -6,26 +6,27 @@ import Realm
 
 final class WordDataSourceTests: XCTestCase {
   
-  override func setUp() {
-    Current.realm = try! Realm(configuration: .init())
-  }
-  
-  override func tearDown() {
-    try! Current.realm.write {
-      Current.realm.deleteAll()
-    }
-  }
-  
   func test_initial_value() {
-    XCTAssertEqual(WordDataSource.live.numberOfWords(), 0)
+    let sut = makeSut()
+    
+    XCTAssertEqual(sut.numberOfWords(), 0)
   }
   
   func test_add_word() {
-    WordDataSource.live.saveWord("dummy")
-    XCTAssertEqual(WordDataSource.live.numberOfWords(), 1)
-    XCTAssertEqual(WordDataSource.live.word(0), "dummy")
+    let sut = makeSut()
     
-    WordDataSource.live.deleteWord(0)
-    XCTAssertEqual(WordDataSource.live.numberOfWords(), 0)
+    sut.saveWord("dummy")
+    XCTAssertEqual(sut.numberOfWords(), 1)
+    XCTAssertEqual(sut.word(0), "dummy")
+    
+    sut.deleteWord(0)
+    XCTAssertEqual(sut.numberOfWords(), 0)
+  }
+  
+  func makeSut(_ function: String = #function) -> WordDataSource {
+    Realm.Configuration.defaultConfiguration.inMemoryIdentifier = function
+    let sut = WordDataSource.live
+    
+    return sut
   }
 }
