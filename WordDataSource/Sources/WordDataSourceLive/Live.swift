@@ -4,17 +4,20 @@ import WordDataSource
 import RealmSwift
 import os.log
 
+struct Environment {
+  var realm: Realm = try! Realm()
+}
+
+var Current = Environment()
+
 public extension WordDataSource {
   static let live: WordDataSource = {
     
     let dataSource = WordDS()
     
     return WordDataSource(
-      saveWord: { string in
-        guard !dataSource.contains(string) else { return }
-        dataSource.save(string: string)
-      },
-      deleteWord: { dataSource.delete(row: $0) },
+      saveWord: dataSource.save,
+      deleteWord: dataSource.delete,
       numberOfWords: { dataSource.words.count },
       word: { dataSource.words[$0].string }
     )
@@ -22,9 +25,9 @@ public extension WordDataSource {
 }
 
 private class WordDS {
-  var realm: Realm = try! Realm()
+  private var realm: Realm = Current.realm
   
-  lazy var words = realm.objects(Word.self).sorted(byKeyPath: "string")
+  private(set) lazy var words = realm.objects(Word.self).sorted(byKeyPath: "string")
   
   func delete(row: Int) {
     let word: Word = words[row]
@@ -39,6 +42,8 @@ private class WordDS {
   }
   
   func save(string: String) {
+    guard !contains(string) else { return }
+    
     let word = Word()
     word.string = string
         
@@ -51,7 +56,7 @@ private class WordDS {
     }
   }
   
-  func contains(_ string: String) -> Bool {
+  private func contains(_ string: String) -> Bool {
     words.contains(where: {$0.string.elementsEqual(string)})
   }
 }

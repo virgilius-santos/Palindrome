@@ -1,15 +1,31 @@
 import XCTest
-@testable import WordDataSource
+import WordDataSource
+@testable import WordDataSourceLive
+import RealmSwift
+import Realm
 
 final class WordDataSourceTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(WordDataSource().text, "Hello, World!")
+  
+  override func setUp() {
+    Current.realm = try! Realm(configuration: .init())
+  }
+  
+  override func tearDown() {
+    try! Current.realm.write {
+      Current.realm.deleteAll()
     }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+  }
+  
+  func test_initial_value() {
+    XCTAssertEqual(WordDataSource.live.numberOfWords(), 0)
+  }
+  
+  func test_add_word() {
+    WordDataSource.live.saveWord("dummy")
+    XCTAssertEqual(WordDataSource.live.numberOfWords(), 1)
+    XCTAssertEqual(WordDataSource.live.word(0), "dummy")
+    
+    WordDataSource.live.deleteWord(0)
+    XCTAssertEqual(WordDataSource.live.numberOfWords(), 0)
+  }
 }

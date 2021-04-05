@@ -24,13 +24,17 @@ let package = Package(
       name: "WordDataSource",
       dependencies: []
     ),
-    .testTarget(
-      name: "WordDataSourceTests",
-      dependencies: ["WordDataSource"]
-    ),
     .target(
       name: "WordDataSourceLive",
-      dependencies: ["Realm", .product(name: "RealmSwift", package: "Realm"),]
+      dependencies: [
+        "WordDataSource",
+        .product(name: "Realm", package: "Realm"),
+        .product(name: "RealmSwift", package: "Realm"),
+      ]
+    ),
+    .testTarget(
+      name: "WordDataSourceTests",
+      dependencies: ["WordDataSourceLive"]
     ),
   ]
 )
