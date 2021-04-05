@@ -67,6 +67,7 @@ public final class PalindromeView: UIView {
         view.returnKeyType = .done
         view.accessibilityIdentifier = .textField
         view.borderStyle = .roundedRect
+        view.clearButtonMode = .always
       }
       <> roundedStyle(radius: .radius_8)
       <> borderStyle(borderColor: .black, borderWidth: .border_1)
