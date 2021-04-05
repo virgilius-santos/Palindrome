@@ -11,10 +11,16 @@ public extension PalindromeViewModel {
     var word: String = String()
     
     let isPalindrome: Box<Bool> = .init(false)
+    let showError: PublishBox<Void> = .init()
     
     return PalindromeViewModel(
       isPalindrome: isPalindrome,
+      showError: showError,
       saveWord: { completion in
+        guard isPalindrome.value == true else {
+          showError.value = ()
+          return
+        }
         dataSource.saveWord(word)
         isPalindrome.value = false
         completion()

@@ -5,6 +5,7 @@ import BoxFeature
 
 public struct PalindromeViewModel {
   public var isPalindrome: Box<Bool>
+  public var showError: PublishBox<Void>
   public var saveWord: (() -> Void) -> Void
   public var deleteWord: (_ row: Int, _ completion: () -> Void) -> Void
   public var numberOfWords: () -> Int
@@ -13,6 +14,7 @@ public struct PalindromeViewModel {
   
   public init(
     isPalindrome: Box<Bool>,
+    showError: PublishBox<Void> = .init(),
     saveWord: @escaping (() -> Void) -> Void,
     deleteWord: @escaping (Int, () -> Void) -> Void,
     numberOfWords: @escaping () -> Int,
@@ -20,6 +22,7 @@ public struct PalindromeViewModel {
     newWord: @escaping (String?) -> Void
   ) {
     self.isPalindrome = isPalindrome
+    self.showError = showError
     self.saveWord = saveWord
     self.deleteWord = deleteWord
     self.numberOfWords = numberOfWords
