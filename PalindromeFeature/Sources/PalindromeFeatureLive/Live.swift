@@ -3,12 +3,11 @@ import Foundation
 import PalindromeFeature
 import FunctionsFeature
 import BoxFeature
+import WordDataSource
 
-extension PalindromeViewModel {
-  static let live: PalindromeViewModel = {
-    
-    let dataSource = WordSource()
-    
+public extension PalindromeViewModel {
+  static func live(dataSource: WordDataSource) -> PalindromeViewModel {
+        
     var word: String = String()
     
     let isPalindrome: Box<Bool> = .init(false)
@@ -21,15 +20,15 @@ extension PalindromeViewModel {
         completion()
       },
       deleteWord: { row, completion in
-        dataSource.deleteWord(row: row)
+        dataSource.deleteWord(row)
         completion()
       },
       numberOfWords: { dataSource.numberOfWords() },
-      wordFor: { dataSource.word(row: $0) },
+      wordFor: { dataSource.word($0) },
       newWord: { string in
         word = (string ?? "")
         isPalindrome.value = checkIfIsPalindrome(word: word)
       }
     )
-  }()
+  }
 }

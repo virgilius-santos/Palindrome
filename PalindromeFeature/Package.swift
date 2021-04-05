@@ -8,14 +8,20 @@ let package = Package(
   products: [
     .library(
       name: "PalindromeFeature",
-      targets: ["PalindromeFeature"]),
+      targets: ["PalindromeFeature"]
+    ),
+    .library(
+      name: "PalindromeFeatureLive",
+      targets: ["PalindromeFeatureLive"]
+    ),
   ],
   dependencies: [
     .package(path: "./UIKitFunctionsFeature"),
     .package(path: "./FunctionsFeature"),
     .package(path: "./ResourcesFeature"),
     .package(path: "./FoundationFunctionsFeature"),
-    .package(path: "./BoxFeature")
+    .package(path: "./BoxFeature"),
+    .package(path: "./WordDataSource"),
   ],
   targets: [
     .target(
@@ -25,10 +31,17 @@ let package = Package(
         "FunctionsFeature",
         "ResourcesFeature",
         "FoundationFunctionsFeature",
-        "BoxFeature"
-      ]),
+        "BoxFeature",
+        "WordDataSource",
+      ]
+    ),
     .testTarget(
       name: "PalindromeFeatureTests",
-      dependencies: ["PalindromeFeature"]),
+      dependencies: ["PalindromeFeature"]
+    ),
+    .target(
+      name: "PalindromeFeatureLive",
+      dependencies: ["PalindromeFeature"]
+    ),
   ]
 )
