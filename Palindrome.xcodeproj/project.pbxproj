@@ -39,7 +39,6 @@
 /* Begin PBXFileReference section */
 		07511F6BCCA5B3609164ED12 /* Pods_PalindromeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalindromeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1808BD702617F97A00393C5B /* PalindromeFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PalindromeFeature; sourceTree = "<group>"; };
-		1808BD742617F99A00393C5B /* Palindrome.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Palindrome.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		18572AEA217CABF0008A196B /* PalindromeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalindromeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18572AEE217CABF0008A196B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18572AF4217CB467008A196B /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 		187BB22B217BF05B008EAEDC = {
 			isa = PBXGroup;
 			children = (
-				1808BD742617F99A00393C5B /* Palindrome.playground */,
 				18A408D8261A606E0028BE70 /* WordDataSource */,
 				18A408CE261A5AEE0028BE70 /* FoundationFunctionsFeature */,
 				18A408C3261A4F600028BE70 /* BoxFeature */,
